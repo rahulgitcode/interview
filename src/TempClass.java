@@ -1,5 +1,9 @@
 
 public class TempClass {
+	
+	synchronized public void message(){
+		System.out.println("I am synchronized...");
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
