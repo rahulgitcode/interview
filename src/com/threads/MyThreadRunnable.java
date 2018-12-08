@@ -8,7 +8,6 @@ public class MyThreadRunnable implements Runnable{
 		mt.start();
 	}
 	
-	@Override
 	public void run() {
 		System.out.println(mt.getName()+" has started running..");
 		int i=10;

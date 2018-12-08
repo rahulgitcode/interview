@@ -5,8 +5,9 @@ public class SynchronizedExample {
 	
 	synchronized int sumArray(){
 		for(int i: array){
-			System.out.println(Running total for );
+			//System.out.println(Running total for );
 		}
+		return 0;
 	}
 
 }
