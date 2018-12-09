@@ -1,28 +1,30 @@
 package com.patterns.singleton;
-
-public class SingletonClass {
-	private static SingletonClass instance;
+/*
+ * Lazy initialization of singleton
+ */
+public class SingletonClassLazy {
+	private static SingletonClassLazy instance;
 	public String name;
 	
-	private SingletonClass(){
+	private SingletonClassLazy(){
 		
 	}
 	
-	private static SingletonClass getInstance(){
+	private static SingletonClassLazy getInstance(){
 		if(instance != null){
 			return instance;
 		}else{
-			instance = new SingletonClass();
+			instance = new SingletonClassLazy();
 			return instance;
 		}
 	}
 	
 	public static void main(String[] args){
-		SingletonClass obj1 = getInstance();
+		SingletonClassLazy obj1 = getInstance();
 		obj1.name="Rahul";
 		System.out.println("Obj1 name:"+ obj1.name);
 		
-		SingletonClass obj2 = getInstance();
+		SingletonClassLazy obj2 = getInstance();
 		System.out.println("Obj2 name:"+ obj2.name);
 		
 		obj2.name="Megha";
