@@ -1,5 +1,8 @@
 package com.search;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BinarySearchIterative {
 	
 	public static boolean searchIterative(int[] arr, int x) {
@@ -27,6 +30,12 @@ public class BinarySearchIterative {
 		boolean found = searchIterative(arr, 151);
 		
 		System.out.println(found);
+		
+		
+		List<Integer> arr_left = new ArrayList<>();
+		
+		arr_left.forEach(t-> System.out.println(t+" "));
+		
 	}
 	
 }
