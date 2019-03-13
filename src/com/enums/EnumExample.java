@@ -1,21 +1,23 @@
 package com.enums;
 
+enum Color{
+	RED, YELLOW, BLUE, GREEN
+}
+
+enum Transport{
+	CAR, BUS, BIKE, BOAT
+}
+
 public class EnumExample {
-	enum Color{
-		RED, YELLOW, BLUE, GREEN
-	}
 	
-	enum Transport{
-		CAR, BUS, BIKE, BOAT
-	}
 
 	public static void main(String[] args) {
 		Color c = Color.BLUE;
 		System.out.println(c);
 		
-		Color[] colors = Color.values();
+		Banna[] colors = Banna.values();
 		System.out.println("Here are all the colors....");
-		for(Color x: colors){
+		for(Banna x: colors){
 			System.out.println(x);
 		}
 		
@@ -31,7 +33,7 @@ public class EnumExample {
 		}
 		
 		
-		System.out.println(Color.valueOf("YELLOW"));
+		System.out.println(Banna.valueOf("YELLOW"));
 		
 		System.out.println(Transport.valueOf("CAR"));
 	}
