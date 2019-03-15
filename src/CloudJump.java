@@ -30,21 +30,21 @@ public class CloudJump {
 
     public static void main(String[] args) throws IOException {
         
-        int n = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+    	int num = 10896;
+		int count = 0;
+        String input = String.valueOf(num);
 
-        int[] c = new int[n];
-
-        String[] cItems = scanner.nextLine().split(" ");
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
-        for (int i = 0; i < n; i++) {
-            int cItem = Integer.parseInt(cItems[i]);
-            c[i] = cItem;
+        for(int i=0; i< input.length(); i++){
+            int n = Integer.valueOf(input.charAt(i));
+            switch(n){
+                case 0: count+=1;break;
+                case 6: count+=1;break;
+                case 8: count+=2;break;
+                case 9: count+=1;break;
+                default: break;
+            }
         }
-
-        int result = jumpingOnClouds(c);
-
-        scanner.close();
-    }
+        
+        System.out.println(count);
+}
 }

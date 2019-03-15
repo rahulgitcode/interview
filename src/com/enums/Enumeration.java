@@ -1,6 +1,6 @@
 package com.enums;
 
-enum Color{
+enum Banna{
 	RED, YELLOW, GREEN
 }
 
@@ -9,9 +9,9 @@ public class Enumeration {
 	public static void main(String[] args) {
 		System.out.println(Color.YELLOW);
 		
-		Color[] Colors = Color.values();
+		Banna[] Colors = Banna.values();
 		
-		for(Color c: Colors){
+		for(Banna c: Colors){
 			System.out.println(c + " at index "+c.ordinal());
 			
 		}
